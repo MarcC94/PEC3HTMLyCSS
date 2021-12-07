@@ -1,0 +1,281 @@
+/*Estilos generales documento*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+/*Colores documento*/
+:root {
+    --color-texto: rgb(23, 23, 23);
+    --color-principal-lila:rgb(91, 73, 254);
+    --color-secundario-verde: rgb(125, 232, 140);
+    --color-secundario-verde-claro: rgb(207, 243, 125);
+    --color-fondo-body: #f9f9f9;
+    --color-blanco: white;
+}
+
+/*Fuente de texto general para el body y color de fondo*/
+body{
+    font-family: 'Inter', sans-serif;
+    background-color: var(--color-fondo-body);
+}
+
+/*Gradiente lineal index.html*/
+.body-index{
+    background: linear-gradient(75deg, var(--color-secundario-verde-claro), var(--color-secundario-verde));
+}
+
+/*Fuente de texto para los títulos*/
+h1,h2,h3,h4,h5{
+    font-family: 'Poppins', sans-serif;
+}
+
+/*Estilos para el header en general*/
+header{
+    width: 100%;
+    height: 100px;
+    background: var(--color-blanco);
+    top: 0;
+    left: 0;
+    z-index: 100;
+}
+
+/*Estilo para el header del index*/
+#header-index{
+    background: transparent;
+}
+
+/*Estilos para la imagen del header*/
+header .titulo-cabecera img{
+    width: 120px; 
+    height: 70px;
+    margin-left: 10px;
+    float: left;
+}
+
+/*Estilos para el menú de navegación*/
+header .menu{
+    position: absolute;
+    top: 60px; 
+} 
+
+/*Estilo para la página seleccionada del menú de navegación*/
+header .pagina-seleccionada{
+    font-weight: bold;
+}
+
+/*Estilos para los enlaces del menú de navegación*/
+header .menu a{
+    color : var(--color-texto);
+    text-decoration: none;
+    padding: 15px;
+}
+
+/*Estilos para los enlaces del menú de navegación
+cuando se hace hover sobre ellos*/
+header .menu a:hover{
+    color: var(--color-principal-lila);
+}
+
+/*Estilos para los elementos de clase contenedor*/
+.contenedor{
+    width: 80%;
+    margin: auto;
+}
+
+/*Estilos para las secciones*/
+section{
+    width: 100%;
+    margin: 40px 0 40px 0;
+}
+
+/*Estilos para los enlaces de las secciones*/
+section a{
+    color: var(--color-principal-lila);
+    text-decoration: none;
+    border-bottom: var(--color-principal-lila) 1px dotted;
+}
+
+/*Estilos para los enlaces de las secciones
+cuando se hace hover sobre ellos*/
+section a:hover{
+    color: var(--color-secundario-verde);
+    border-bottom-color: var(--color-secundario-verde);
+}
+
+/*Estilo para los parrafos de las secciones*/
+section > div > p{
+    margin-bottom: 10px; 
+}
+
+/*Estilos para la sección index*/
+#index{
+    position: relative;
+}
+
+/*Estilos para la imagen de la sección index*/
+#index img{
+    width: 50%;
+    height: 50%;
+    transform: translateX(90%) translateY(10%);
+}
+
+/*Estilos para la clase contenedor de la sección index*/
+#index .contenedor{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    color:var(--color-blanco);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/*Estilos para el h1 de la sección index*/
+#index .contenedor h1{
+font-size: 40px;
+}
+
+/*Estilos para el p de la sección index*/
+#index .contenedor p{
+    color: var(--color-texto);
+}
+
+/*Estilos para el input de la sección index*/
+#index .input-icono input{
+    background:url("../img/icon_search.svg") no-repeat;
+    background-color:var(--color-blanco);
+    padding: 0 40px;
+    border: none;
+    width: 500px;
+    height: 40px;
+}
+
+/*Estilos formulario*/
+form{
+	width:500px;
+}
+
+form fieldset {
+    background-color: var(--color-blanco);
+    border-color: var(--color-principal-lila);
+    margin-bottom: 20px;
+    padding: 0 20px;
+}
+
+form > fieldset > legend{
+    color: var(--color-blanco);
+    background-color: var(--color-principal-lila);
+    margin-bottom: 10px;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="date"],
+form input[type="number"],
+form select{
+    width: 400px;
+}
+
+form input,
+form select{
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+form abbr{
+    color: red;
+}
+
+form .texto-campos-obligatorios{
+    color: red;
+    margin-bottom: 10px;
+}
+
+form .enviar-form{
+	padding:8px 16px;
+	margin-top:20px;
+	border:1px solid var(--color-fondo-body);
+	border-radius:5px;
+	color:var(--color-blanco);
+	background-color:var(--color-principal-lila);
+} 
+
+form .enviar-form:hover{
+	cursor:pointer;
+}
+
+/*Estilos tabla*/
+table{
+    border-collapse: collapse;
+    border: 2px solid rgb(200,200,200);
+    letter-spacing: 1px;
+    font-size: 0.8rem;
+    margin-top: 20px;
+    margin-bottom: 300px;
+    width: 100%;
+}
+  
+table .titulo-tabla{
+    background-color: var(--color-principal-lila);
+    color: var(--color-blanco);
+}
+  
+table .celda-vacia{
+    background-color: var(--color-secundario-verde);
+}
+  
+table td, th{
+    border: 1px solid rgb(190,190,190);
+    padding: 10px 20px;
+}
+  
+table th{
+    background-color: var(--color-secundario-verde-claro);
+}
+  
+table td{
+    text-align: center;
+}
+
+/*Estilos para la imagen del documento "about.html"*/
+.imagen-aboutus img {
+    left: 0;
+    border: 1px solid var(--color-secundario-verde-claro);
+}
+
+/*Estilos para el pie de foto de la imagen del documento "about.html"*/
+.imagen-aboutus p {
+    text-align: center;
+    font-style: italic;
+    font-size: smaller;
+    text-indent: 0;
+}
+  
+/*Estilos footer*/
+footer{
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    background: var(--color-principal-lila);
+}
+
+footer .contenedor p{
+    justify-content: left;
+    padding: 10px 5px;
+    color: var(--color-blanco);
+
+}
+
+footer .enlaces > a{
+    justify-content: left;
+    display: inline;
+    text-decoration: none;
+    color: var(--color-blanco);
+    padding: 0 5px;
+}
+
+/*Estilos para los enlaces del footer
+cuando se hace hover sobre ellos*/
+footer .enlaces a:hover{
+    color: var(--color-secundario-verde);
+}

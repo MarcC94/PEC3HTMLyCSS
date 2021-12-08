@@ -7,46 +7,137 @@
     <title>index</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Poppins:wght@800&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/estilos.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,800;1,400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos/estilos.css">
+
 </head>
-<body class="body-index">
-    <header id="header-index">
+<body>
+    <header>
         <div class="contenedor">
-            <div class="titulo-cabecera">
-                <a href="index.html"><img src="img/logo_white.svg" alt=""></a>
-            </div>
+            <h2>NO HAY PLANETA B</h2>
+            <a href="index.html"><h1>1,5 ºC</h1></a>
             <nav class="menu">
-                <a href="about.html">Sobre petinder</a>
-                <a href="tshirt.html">Camiseta</a>
-                <a href="join.html">Házte socio</a>
+                <a href="sintomas.html">SÍNTOMAS DEL CAMBIO CLIMÁTICO</a>
+                <a href="videos.html">VIDEOS</a>
+                <a href="cop26.html">COP26</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section id="index">
-            <img class="imagen-index" src="./img/hero_image_bg.png" alt="">
+        <section id="banner">
+            <img src="./img/bg-hero-home.jpg" alt="Imagen principal Tailandia">
             <div class="contenedor">
-                <h1><span style="color:black">Perretes y gatetes </span><br>en tu zona</h1>
-                <p>Te ayudamos a encontrar el amigo fiel que necesitas. Lo tienes a una  <br> pata de distancia.</p>
-                <div class="input-icono">
-                    <input type="search" name="input"
-                        placeholder="Busca a tu nuevo mejor amigo">
-                </div>
-            </div>  
-        </section>  
+                <h2>La crisis climática, ¿una carrera que podemos ganar?</h2>
+            </div>
+        </section>
+
+        <section id="presentacion">
+            <div class="contenedor">
+                <h2 class="titulo-pagina">¿Qué es Un grado y medio?</h2>
+                <p>El acuerdo de París de 2015 sobre el cambio climático 
+                exige que el calentamiento global se mantenga por debajo 
+                de 1,5 grados centígrados. ¿Se está haciendo todo lo que 
+                se puede al respecto?
+                </p>
+                <p>En Un grado y medio estamos preocupados por el cambio 
+                climático y desde aquí os queremos mantener informados y 
+                atentos a las iniciativas de acción climática.</p>
+            </div>
+        </section>
+
+        <section id="noticias">
+            <div class="contenedor">
+                <h2>Noticias</h2>
+                <article class="primera-noticia">
+                    <div class="imagen-noticia1">
+                        <img src="./img/n-greta-thunberg.jpg" alt="Noticia Greta">
+                        <p>14.11.2021</p>
+                    </div>
+                    <a href="">Greta Thunberg lamenta el acuerdo de la COP26</a>
+                    <p>Bla, bla, bla. Esta es la descripción que Greta 
+                    Thunberg ha hecho del acuerdo que ha puesto fin a la COP26 de Glasgow …</p>
+                    <a href="">Leer más</a>
+                </article>
+                
+                <article class="segunda-noticia">
+                    <div class="imagen-noticia2">
+                        <img src="./img/n-delhi.jpg" alt="Noticia Delhi">
+                        <p>13.11.2021</p>
+                    </div>
+                    <a href="">El estado indio de Delhi cierra escuelas por la 
+                    contaminación del aire </a>
+                    <p>El Gobierno ha ordenado el cierre de escuelas, ha paralizado 
+                    la construcción y ha decretado que los funcionarios trabajen obligatoriamente 
+                    desde casa, debido a la contaminación del aire …</p>
+                    <a href="">Leer más</a>
+                </article>
+
+                <article class="tercera-noticia">
+                    <div class="imagen-noticia3">
+                        <img src="./img/n-estres.jpg" alt="Noticia estrés">
+                        <p>07.10.2021</p>
+                    </div>
+                    <a href="">La ansiedad climática: un problema de salud mental</a>
+                    <p>Diversos estudios aseguran que el escenario apocalíptico que augura 
+                    el cambio climático causa estrés, sobre todo en niños y adolescentes …</p>
+                    <a href="">Leer más</a>
+                </article>
+            </div>
+        </section>
+
+        <section id="suscribete">
+            <div class="contenedor">
+                <h2>Suscríbete a nuestro boletín de noticias</h2>
+                <form>
+                    <fieldset>
+                        <p>
+                            <label for="nombre">Nombre <abbr title="Campo requerido" aria-label="required">*</abbr></label> <br>
+                            <input type="text" id="nombre" name="nombre" placeholder="Nombre" pattern="[A-Za-z]{2-64}" required>
+                        </p>
+                        <p>
+                            <label for="mail">Correo electrónico <abbr title="Campo requerido" aria-label="required">*</abbr></label> <br>
+                            <input type="email" id="mail" name="email" placeholder="Correo electrónico" required>
+                        </p>
+                        <p>INFORMACIÓN SOBRE PROTECCIÓN DE DATOS DE <strong>Un grado y medio</strong>.<strong>Finalidades</strong>: recogida de datos 
+                        para el envío de información. <strong>Legitimación</strong>: Consentimiento del interesado. <strong>Destinatarios</strong>: No están previstas 
+                        cesiones de datos a terceros, excepto obligación legal. <strong>Derechos</strong>: Puede retirar su consentimiento en cualquier 
+                        momento, así como acceder, rectificar, suprimir sus datos y otros derechos dirigiéndose a <a href="">@ungradoymedio.info</a>. 
+                        <strong>Información Adicional</strong>: Puede ampliar la información en el enlace de <a href="">Aviso legal</a> y <a href="">Política de privacidad</a>.</p>
+                    </fieldset>
+                    <p>
+                        <input type="checkbox" name="acepto" id="acepto">
+                        <label for="acepto">He leído y acepto la política de privacidad</label>
+                    </p>
+                    <p>
+                        <button class="enviar-form" type="submit">Suscríbeme</button>
+                    </p>
+                </form>
+            </div>
+        </section>
     </main>
-    
+
     <footer>
         <div class="contenedor">
-            <p>2021 © Petinder - Marc Cañabate Parra</p>
-            <div class="enlaces">
-                <a href="">Términos y condiciones de uso</a>
+            <div class="menu-terminos-legales">
+                <a href="">Sobre nosotros</a>
+                <a href="">Aviso legal</a>
                 <a href="">Política de privacidad</a>
-                <a href="">Cookies</a>
-                <a href="">FAQ</a>
+                <a href="">Política de cookies</a>
             </div>
+            <div class="menu-redes-sociales">
+                <a href="">
+                    <img src="./img/twitter.svg" alt="">
+                </a>
+                <a href="">
+                    <img src="./img/instagram.svg" alt="">
+                </a>               
+                <a href="">
+                    <img src="./img/youtube.svg" alt="">
+                </a>
+            </div>
+            <p>Actividad realizada por Marc Cañabate Parra, 
+            para la asignatura HTML y CSS. Primer semestre del curso 2021-2022</p>
         </div>
     </footer>
 </body>

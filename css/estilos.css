@@ -1,0 +1,507 @@
+/*Estilos generales documento*/
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+/*Colores documento*/
+:root {
+  --color-texto: rgb(0, 0, 0);
+  --color-texto-fondo-oscuro:rgb(255, 255, 255);
+  --color-contraste: rgb(189, 55, 0);
+  --color-fondo-ppal: rgb(244, 244, 244);
+  --color-fondo-form: rgb(242,232,228);
+}
+
+/*Color de fondo main*/
+main{
+  background-color:var(--color-fondo-ppal);
+}
+
+/*Fuente de texto utilizada para el body*/
+body{
+  font-family: 'Raleway', sans-serif;
+}
+
+/*********************Header*********************/
+/*Estilos para el header*/
+header{
+  width: 100%;
+  padding: 20px;
+  color: var(--color-texto);
+  text-align: center;
+}
+
+/*Estilos enlace título*/
+.enlace-titulo{
+  color :var(--color-texto);
+  text-decoration: none;
+}
+
+/*Padding menu navegación*/
+.menu{
+  padding: 20px;
+}
+
+/*Estilos enlaces menu navegación*/
+.menu a{
+  display: block;
+  color :var(--color-texto);
+  text-decoration: none;
+  padding:5px;
+  font-weight:bold;
+}
+
+/*Estilos para los enlaces del menú de navegación
+cuando se hace hover sobre ellos*/
+.menu a:hover{
+  color:rgba(0,0,0,0.5);
+}
+
+/*********************Estilos generales*********************/
+/*Estilos contenedor*/
+.contenedor{
+  width: 90%;
+  margin: auto;
+}
+
+/*Estilo secciones*/
+section{
+  width: 100%;
+}
+
+/*Estilos títulos páginas*/
+.titulo-pagina{
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/*********************Estilos Banner*********************/
+/*Posición banner*/
+#banner{
+  position: relative;
+}
+
+/*Tamaño imagen banner*/
+#banner img{
+  width: 100%;
+  height: 100%;
+}
+
+/*Estilos contenedor banner*/
+#banner .contenedor{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color:white;
+  transform: translateX(-50%) translateY(-50%);
+}
+
+/*Estilos texto banner*/
+#banner h2{
+  font-size: 30px;
+  font-weight: normal;
+}
+
+/*********************Página index.html*********************/
+/*Margen inferior párrafos secciones presentación y noticias*/
+#presentacion p,
+#noticias p{
+  margin-bottom: 10px;
+}
+
+/*Estilos contenedor sección notícias*/
+#noticias .contenedor{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/*Margen entre artículos sección notícias*/
+#noticias article{
+  margin: 15px;
+}
+
+/*Ancho max imagenes sección notícias*/
+#noticias img{
+  max-width: 100%;
+}
+
+/*Estilos enlaces*/
+.leer-mas{
+  color: var(--color-contraste);
+  text-decoration: none;
+  border-bottom: var(--color-contraste) 1px dotted;
+}
+
+/*Estilo al hacer hover sobre el enlace leer mas*/
+.leer-mas:hover{
+  color:var(--color-texto);
+}
+
+/*Estilos títulos notícias*/
+.titulo-noticia{
+  color: var(--color-contraste);
+  text-decoration: none;
+}
+
+/*Estilo al hacer hover sobre el enlace del título de la notícia*/
+.titulo-noticia:hover{
+  color:var(--color-texto);
+}
+
+/*Estilos formulario*/
+/*Color sección formulario*/
+#suscribete{
+  padding: 30px;
+  background-color: var(--color-fondo-form);
+}
+
+/*Título sección formulario*/
+#suscribete h2{
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/*Estilos generales formulario*/
+form{
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Margen inferior párrafos formulario*/
+form p{
+  margin-bottom: 10px;
+}
+
+/*Estilos campos input formulario*/
+form input[type="text"],
+form input[type="email"]{
+  width: 300px;
+  padding: 15px;
+  margin-bottom: 10px;
+}
+
+/*Estilos enlaces formulario*/
+form a{
+  color: var(--color-contraste);
+  text-decoration: none;
+}
+
+/*Estilo al hacer hover sobre los enlaces del formulario*/
+form a:hover{
+  color:var(--color-texto);
+}
+
+/*Estilos botón "SUSCRÍBEME"*/
+form .enviar-form{	
+  padding:10px 20px;
+	margin-top:20px;
+	border:1px solid var(--color-fondo-body);
+	color:var(--color-texto-fondo-oscuro);
+	background-color:var(--color-contraste);
+} 
+
+/*Estilos al hacer hover sobre el botón "SUSCRÍBEME"*/
+form .enviar-form:hover{
+	cursor:pointer;
+  background-color: var(--color-texto);
+  color: var(--color-texto-fondo-oscuro);
+}
+
+/*********************Página videos.html*********************/
+/*Posicionado texto sección videos*/
+#videos{
+  text-align: center;
+}
+
+/*Tamaño imagenes*/
+#videos img{
+  width: 100%;
+  max-width: 280px;
+}
+
+/*Estilos div's contenedor sección videos*/
+#videos .contenedor div{
+    margin: 15px;
+    background-color: white;
+}
+
+/*********************Página cop26.html*********************/
+/*Margen inferior párrafos sección resultados*/
+#cop26-resultados p{
+  margin-bottom: 10px;
+}
+
+/*Margen inferior div's sección datos*/
+#cop26-datos div{
+  margin-bottom: 10px;
+}
+
+/*Estilos enlaces sección datos*/
+#cop26-datos a{
+  color: var(--color-contraste);
+  text-decoration: none;
+}
+
+/*Estilo al hacer hover sobre los enlaces de la sección datos*/
+#cop26-datos a:hover{
+  color:var(--color-texto);
+}
+
+/*Tipo de fuente clase datos-acontecimiento*/
+.datos-acontecimiento{
+  font-style: normal;
+  font-weight: 600;
+}
+
+/*Lista*/
+ul{
+  list-style-type:decimal;
+  margin-left: 30px;
+  margin-bottom: 10px;
+}
+
+/*Margen inferior elementos lista*/
+ul li{
+  margin-bottom: 10px;
+}
+
+/*Estilos citas*/
+blockquote{
+  font-style: italic;
+  font-weight: 400;
+  background: white;
+  border-left-color: red;
+  border-left-style: solid;
+  border-left-width: 3px;
+  padding-left: 12px;
+  margin-bottom: 20px;
+}
+
+/*Estilo autor cita*/
+.autor-cita{
+  text-align: left;
+}
+
+/*********************Página sintomas.html*********************/
+/*Margen inferior párrafos sección síntomas*/
+#sintomas p{
+  margin-bottom: 10px;
+}
+
+/*Estilos artículos*/
+#sintomas article{
+  margin: 15px;
+  background-color: white;
+}
+
+/*Tamaño imagenes*/
+#sintomas img{
+  max-width: 100%;
+}
+
+/*Estilos enlaces*/
+#sintomas a{
+  color: var(--color-contraste);
+  text-decoration: none;
+  border-bottom: var(--color-contraste) 1px dotted;
+}
+
+/*Estilo al hacer hover sobre los enlaces*/
+#sintomas a:hover{
+  color:var(--color-texto);
+}
+
+/*********************Footer*********************/
+/*Color fondo footer*/
+footer{
+  padding: 20px;
+  background:var(--color-texto);
+}
+
+/*Estilos contenido footer*/
+footer .contenedor{
+  justify-content: center;
+  color: var(--color-texto-fondo-oscuro);
+}
+
+/*Estilos menus footer*/
+.menu-redes-sociales,
+.menu-terminos-legales,
+footer p{
+  padding: 20px 0;
+  width: 100%;
+  text-align: center;
+}
+
+/*Display enlaces redes sociales*/
+.menu-redes-sociales > a{
+  display: inline;
+}
+
+/*Display enlaces terminos legales*/
+.menu-terminos-legales > a{
+  display: block;
+}
+
+/*Estilo enlaces footer*/
+.menu-terminos-legales > a,
+.menu-redes-sociales > a{
+  color :var(--color-texto-fondo-oscuro);
+  text-decoration: none;
+}
+
+/*Estilo enlaces texto footer estado hover*/
+.menu-terminos-legales > a:hover{
+  color: var(--color-contraste);
+}
+
+/*Estilo enlaces imagenes footer estado hover*/
+.menu-redes-sociales > a:hover{
+  opacity: 0.7;
+}
+
+/*********************RESPONSIVE PAGE*********************/
+@media(min-width:768px){
+  /****Responsive header****/
+  /*Contenido header a la izquierda*/
+  header .contenedor{
+    text-align: left;
+  }
+
+  /*Separación entre enlaces*/
+  .menu{
+    padding: 20px 0;
+  }
+
+  /*Enlaces menú uno al lado del otro*/
+  .menu a{
+    display: inline;
+  }
+
+  /****Responsive banner****/
+  /*Tamaño texto banner*/
+  #banner h2{
+    font-size: 40px;
+  }
+
+  /*Altura banner*/
+  #banner{
+    height: 300px;
+    overflow: hidden;
+  }
+
+  /*Modificación imagen para mostrarla adecuadamente*/
+  #banner img{
+    height: auto;
+    margin-top: -100px;
+  }
+
+  /****Responsive index.html****/
+  /*Notícias en una sola línea*/
+  #noticias article{
+    flex: 1;
+  }
+
+  /****Responsive cop26.hmtl****/
+  /*Flex layout para mostrar una sección al lado de la otra*/
+  #cop26 .contenedor{
+    display: flex;
+  }
+
+  /****Responsive videos.html****/
+  /*Grid layout de los videos*/
+  #videos .contenedor{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+  }
+
+  .videos-youtube1{
+    grid-row: 1;
+    grid-column: 1;
+  }
+  
+  .videos-youtube2{
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .videos-youtube3{
+    grid-row: 2;
+    grid-column: 1;
+  }
+
+  .videos-youtube4{
+    grid-row: 2;
+    grid-column: 2;
+  }
+
+  /****Responsive sintomas.html****/
+  /*Grid layout de los síntomas*/
+  #sintomas .contenedor{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+  }
+    
+  .sintomas1 {
+    grid-row: 1;
+    grid-column: 1 /span 2;
+  }
+
+  .sintomas2{
+    grid-row: 2;
+    grid-column: 2 / span 2;
+  }
+  
+  .sintomas3{
+    grid-row: 3;
+    grid-column: 1 / span 2;
+  }
+  
+  .sintomas4{
+    grid-row: 4;
+    grid-column: 2 / span 2;
+  }
+  
+  .sintomas5{
+    grid-row: 5;
+    grid-column: 1 / span 2;
+  }
+
+  /****Responsive footer****/
+  /*Contenido del footer a la izquierda*/
+  .menu-redes-sociales,
+  .menu-terminos-legales,
+  footer p{
+  text-align: left;
+  }
+
+  /*Enlaces menú uno al lado del otro*/
+  .menu-terminos-legales > a{
+    display: inline;
+  }
+}
+
+
+@media(min-width:1024px){
+  /*Ancho máximo contenedor para resolución de 1024px*/
+  .contenedor{
+    width: 1000px;
+  }
+
+  /*Modificación imagen banner para mostrarla adecuadamente*/
+  #banner img{
+    height: auto;
+    margin-top: -200px;
+  }  
+}
+
